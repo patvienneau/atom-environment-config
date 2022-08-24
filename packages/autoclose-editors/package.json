@@ -1,0 +1,49 @@
+{
+  "_from": "https://www.atom.io/api/packages/autoclose-editors/versions/0.0.8/tarball",
+  "_id": "autoclose-editors@0.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-Vsq3gZl7IAa+2k9FIjTLFJH1txsqoBEVYR4WWiIKlf/cbB6edde5BTEtX0y4mfxUHkHiwjfK5q5YTqMaa1+9Ag==",
+  "_location": "/autoclose-editors",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autoclose-editors/versions/0.0.8/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autoclose-editors/versions/0.0.8/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autoclose-editors/versions/0.0.8/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autoclose-editors/versions/0.0.8/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autoclose-editors/versions/0.0.8/tarball",
+  "_shasum": "e6e4493057540db6d447bef95011d4f99b3ea995",
+  "_spec": "https://www.atom.io/api/packages/autoclose-editors/versions/0.0.8/tarball",
+  "_where": "/private/var/folders/pg/3ms3qmv50dzc9xcwmfkkfzmh0000gn/T/apm-install-dir-2022625-18092-lceklm.g4i5c",
+  "bugs": {
+    "url": "https://github.com/pvienneau/atom-clear-deleted-editors/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Automatically close the appropriate editor tabs when its parent directory is deleted.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/pvienneau/atom-clear-deleted-editors#readme",
+  "keywords": [
+    "tabs",
+    "editor",
+    "delete",
+    "autoclose",
+    "close",
+    "delete",
+    "rename"
+  ],
+  "main": "./lib/main",
+  "name": "autoclose-editors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pvienneau/atom-clear-deleted-editors.git"
+  },
+  "version": "0.0.8"
+}

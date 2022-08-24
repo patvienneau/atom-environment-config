@@ -1,0 +1,20 @@
+div {
+  // Active file not formattable: hide tile.
+  &[data-prettier-can-format-file='false'] {
+    display: none;
+  }
+
+  // Show the tile as clickable.
+  &.prettier-status-tile:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  // If Format on Save is enabled, make the label more visible.
+  &[data-prettier-format-on-save='enabled'] {
+    // color is handled by adding or removing the text-success class when updating the status tile
+    &::after {
+      content: ' ✓';
+    }
+  }
+}

@@ -1,0 +1,30 @@
+branches:
+  only:
+    - master
+git:
+  depth: 10
+
+language: cpp
+
+dist: xenial
+
+os:
+  - linux
+  - osx
+
+env:
+  - ATOM_CHANNEL: stable
+  - ATOM_CHANNEL: beta
+
+addons:
+  apt:
+    packages:
+      - build-essential
+      - fakeroot
+      - git
+      - libgconf2-4
+      - libsecret-1-dev
+
+script:
+  - export APM_TEST_PACKAGES='linter intentions linter-ui-default busy-signal'
+  - "curl -sL https://git.io/fji1w | sh"

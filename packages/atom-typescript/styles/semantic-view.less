@@ -1,0 +1,112 @@
+// From https://github.com/xndcn/symbols-tree-view
+@import "ui-variables";
+@import "syntax-variables";
+@font-face {
+  font-family: "symbol-icons";
+  src: url("atom://atom-typescript/images/symbol-icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@symbol-class: "\e600";
+@symbol-struct: "\e601";
+@symbol-macro: "\e602";
+@symbol-typedef: "\e603";
+@symbol-union: "\e604";
+@symbol-interface: "\e605";
+@symbol-enum: "\e606";
+@symbol-variable: "\e607";
+@symbol-function: "\e608";
+@symbol-namespace: "\e609";
+.symbol-icon(@type, @symbol: @type, @color: @symbol) {
+  .icon-@{type}::before {
+    @scontent: "symbol-@{symbol}";
+    @scolor: "syntax-color-@{color}";
+    font-family: "symbol-icons";
+    content: @@scontent;
+    color: @@scolor;
+  }
+}
+.modifier(@type, @color) {
+  .modifier-@{type}::after {
+    content: " ⚫ ";
+    color: @color;
+  }
+}
+.atomts-semantic-view {
+  overflow-y: auto;
+
+  div.header {
+    position: initial;
+  }
+
+  div.header.selected {
+    color: @text-color-selected;
+    & > span {
+      z-index: 1;
+    }
+    &::before {
+      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding-top: 2em;
+      margin-top: -2em;
+      background-color: @background-color-selected;
+      display: block;
+      content: "";
+    }
+  }
+
+  // @syntax-color-variable
+  // @syntax-color-constant
+  // @syntax-color-property
+  // @syntax-color-value
+  // @syntax-color-function
+  // @syntax-color-method
+  // @syntax-color-class
+  // @syntax-color-keyword
+  // @syntax-color-tag
+  // @syntax-color-attribute
+  // @syntax-color-import
+
+  .symbol-icon(class);
+  .symbol-icon(variable);
+  .symbol-icon(struct,    @color: class);
+  .symbol-icon(interface, @color: class);
+  .symbol-icon(enum,      @color: class);
+  .symbol-icon(typedef,   @color: class);
+  .symbol-icon(macro,     @color: variable);
+  .symbol-icon(union,     @color: class);
+
+  .symbol-icon(field,       variable, property);
+  .symbol-icon(member,      variable, property);
+  .symbol-icon(property,    variable, property);
+  .symbol-icon(module,      macro,    import);
+
+  //type definition
+  .symbol-icon(type,        typedef,  class);
+
+  // variable like
+  .symbol-icon(var,         variable);
+  .symbol-icon(alias,       variable);
+  .symbol-icon(let,         variable);
+  .symbol-icon(const,       variable);
+
+  // function like
+  .symbol-icon(function,    function);
+  .symbol-icon(constructor, function, method);
+  .symbol-icon(method,      function, method);
+  .symbol-icon(setter,      function, method);
+  .symbol-icon(getter,      function, method);
+
+  // module like
+  .symbol-icon(namespace,   namespace, import);
+
+  // access-modifiers
+  .modifier(public, @text-color-success);
+  .modifier(protected, @text-color-warning);
+  .modifier(private, @text-color-error);
+}

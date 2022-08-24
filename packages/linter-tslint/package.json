@@ -1,0 +1,97 @@
+{
+  "_from": "https://www.atom.io/api/packages/linter-tslint/versions/1.11.1/tarball",
+  "_id": "linter-tslint@1.11.1",
+  "_inBundle": false,
+  "_integrity": "sha512-KXOsOOgyDFddat8DByo/8vr0ucguA9PnXFQQ1yuUKjRt3V/IWv+qyifWhd5PjqVu1yNOClxyUhIzTisLEdV7NQ==",
+  "_location": "/linter-tslint",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/linter-tslint/versions/1.11.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/linter-tslint/versions/1.11.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/linter-tslint/versions/1.11.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/linter-tslint/versions/1.11.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/linter-tslint/versions/1.11.1/tarball",
+  "_shasum": "44f945c8b7306f510042cceacbff4e30e28d362f",
+  "_spec": "https://www.atom.io/api/packages/linter-tslint/versions/1.11.1/tarball",
+  "_where": "/private/var/folders/pg/3ms3qmv50dzc9xcwmfkkfzmh0000gn/T/apm-install-dir-2022625-20237-1vq8u2e.q18q",
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-tslint/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-package-deps": "7.2.3",
+    "consistent-path": "2.0.3",
+    "crypto-random-string": "3.3.1",
+    "loophole": "1.1.0",
+    "resolve": "1.20.0",
+    "tslint": "^6",
+    "tslint-rule-documentation": "1.0.3",
+    "typescript": "4.2.3"
+  },
+  "deprecated": false,
+  "description": "Linter plugin for Typescript, using tslint",
+  "devDependencies": {
+    "@types/atom": "^1.40.10",
+    "@types/node": "^14.14.37",
+    "@types/resolve": "^1.20.0",
+    "build-commit": "^0.1.4",
+    "cross-env": "^7.0.3",
+    "eslint": "7.23.0",
+    "eslint-config-atomic": "^1.12.5",
+    "jasmine-fix": "1.3.1",
+    "rollup": "^2.44.0",
+    "rollup-plugin-atomic": "^2.2.0",
+    "shx": "^0.3.3"
+  },
+  "dist": {
+    "shasum": "ef99bad67e3e7db0dc69d8d379272ef02f4a4a21"
+  },
+  "engines": {
+    "atom": ">=1.14.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-atomic"
+  },
+  "homepage": "https://github.com/AtomLinter/linter-tslint",
+  "license": "MIT",
+  "main": "./dist/main.js",
+  "name": "linter-tslint",
+  "package-deps": [
+    {
+      "name": "linter",
+      "minimumVersion": "3.3.0"
+    }
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-tslint.git"
+  },
+  "scripts": {
+    "build": "npm run clean && cross-env NODE_ENV=production rollup -c",
+    "build-commit": "build-commit -o dist",
+    "clean": "shx rm -rf dist",
+    "dev": "npm run clean && cross-env NODE_ENV=development rollup -c -w",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix",
+    "prepare": "npm run build",
+    "test": "npm run build && atom --test spec",
+    "test.format": "prettier . --check",
+    "test.lint": "eslint .",
+    "tsc.build": "tsc -p lib/tsconfig.json || echo done",
+    "tsc.dev": "npm run build -- --watch"
+  },
+  "version": "1.11.1"
+}

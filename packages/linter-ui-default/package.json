@@ -1,0 +1,303 @@
+{
+  "_from": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball",
+  "_id": "linter-ui-default@3.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-VJmM8GXtGiKhaR1qmt2WXCgwnLHURyteQG0RtbzSTfPMrCgtahvlh7rqpVDNrj4USCISCvmK+a++SGukRGMpfQ==",
+  "_location": "/linter-ui-default",
+  "_moduleAliases": {
+    "solid-js": "./node_modules/solid-js/dist/solid.cjs",
+    "solid-js/web": "./node_modules/solid-js/web/dist/web.cjs"
+  },
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball",
+  "_shasum": "7132ebb019bcb60eb91bea1c8deee43b253a81b5",
+  "_spec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.4.1/tarball",
+  "_where": "/private/var/folders/pg/3ms3qmv50dzc9xcwmfkkfzmh0000gn/T/apm-install-dir-2022625-19856-hitis0.6nw9v",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "alias": {
+    "solid-js": "solid-js/dist/solid.js",
+    "solid-js/web": "solid-js/web/dist/web.js",
+    "solid-simple-table": "solid-simple-table/dist/SimpleTable.module.js",
+    "marked": "marked/lib/marked.esm.js"
+  },
+  "bugs": {
+    "url": "https://github.com/steelbrain/linter-ui-default/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "showPanel": {
+      "type": "boolean",
+      "description": "Show panel at the bottom of screen",
+      "default": false,
+      "order": 1
+    },
+    "showTooltip": {
+      "description": "Show inline issue tooltips",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "showStatusBar": {
+      "description": "Show status bar with error / warning / info count at the bottom",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "showDecorations": {
+      "description": "Underline editor text and highlight gutter of issues",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "showProviderName": {
+      "type": "boolean",
+      "description": "Show provider name in tooltip (Hint: It's always shown in the panel)",
+      "default": false,
+      "order": 1
+    },
+    "useBusySignal": {
+      "description": "Whether to integrate with the `busy-signal` package",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "hidePanelWhenEmpty": {
+      "description": "Hide panel when there are no issues to display",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "alwaysTakeMinimumSpace": {
+      "description": "Auto resizes Linter panel when there are less issues to show",
+      "type": "boolean",
+      "default": false,
+      "order": 1
+    },
+    "decorateOnTreeView": {
+      "type": "string",
+      "description": "Underline the selected type in TreeView to indicate issues",
+      "default": "Files",
+      "enum": [
+        "Files and Directories",
+        "Files",
+        "None"
+      ],
+      "order": 2
+    },
+    "panelRepresents": {
+      "type": "string",
+      "enum": [
+        "Entire Project",
+        "Current File",
+        "Current Line"
+      ],
+      "default": "Current File",
+      "order": 2
+    },
+    "statusBarPosition": {
+      "title": "Statusbar Position",
+      "type": "string",
+      "enum": [
+        "Left",
+        "Right"
+      ],
+      "default": "Left",
+      "order": 2
+    },
+    "statusBarRepresents": {
+      "title": "Statusbar Represents",
+      "type": "string",
+      "enum": [
+        "Entire Project",
+        "Current File"
+      ],
+      "default": "Entire Project",
+      "order": 2
+    },
+    "statusBarClickBehavior": {
+      "title": "Statusbar Click Behavior",
+      "type": "string",
+      "enum": [
+        "Toggle Panel",
+        "Toggle Status Bar Scope",
+        "Jump to next issue"
+      ],
+      "default": "Toggle Panel",
+      "order": 2
+    },
+    "tooltipFollows": {
+      "type": "string",
+      "description": "Choose whether tooltips show on mouseover, or follow the keyboard cursor",
+      "enum": [
+        "Both",
+        "Mouse",
+        "Keyboard"
+      ],
+      "default": "Both",
+      "order": 2
+    },
+    "gutterPosition": {
+      "title": "Gutter Highlights Position",
+      "description": "Relative to the line numbers",
+      "type": "string",
+      "enum": [
+        "Left",
+        "Right"
+      ],
+      "default": "Right",
+      "order": 2
+    },
+    "panelHeight": {
+      "title": "Panel Height",
+      "description": "in px",
+      "type": "number",
+      "default": 100,
+      "order": 3
+    },
+    "longLineLength": {
+      "title": "Long Line Length",
+      "description": "If an editor has a line with a length more than this number, linter will skip adding inline linter markers.",
+      "type": "number",
+      "default": 4000,
+      "order": 10
+    },
+    "largeFileLineCount": {
+      "title": "Large File Line Count",
+      "description": "If an editor more line numbers than this number, linter will skip adding inline linter markers.",
+      "type": "number",
+      "default": 20000,
+      "order": 11
+    }
+  },
+  "consumedServices": {
+    "busy-signal": {
+      "versions": {
+        "1.0.0": "consumeSignal"
+      }
+    },
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-ide-base": "3.1.1",
+    "atom-package-deps": "^7.2.3",
+    "disposable-event": "^2.0.0",
+    "marked": "^2.1.2",
+    "solid-js": "~0.26.5",
+    "solid-simple-table": "0.2.6"
+  },
+  "deprecated": false,
+  "description": "Default UI for the Linter package",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@types/atom": "^1.40.10",
+    "@types/chance": "^1.1.2",
+    "@types/jasmine": "^3.7.7",
+    "@types/lodash": "^4.14.170",
+    "@types/marked": "^2.0.3",
+    "@types/node": "^15.12.4",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "@types/requestidlecallback": "^0.3.1",
+    "babel-preset-atomic": "^4.1.0",
+    "babel-preset-solid": "~0.26.5",
+    "build-commit": "0.1.4",
+    "chance": "^1.1.7",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.29.0",
+    "eslint-config-atomic": "1.16.1",
+    "gitly": "^2.1.1",
+    "jasmine-fix": "^1.3.1",
+    "module-alias": "^2.2.2",
+    "parcel": "2.0.0-nightly.729",
+    "prettier-config-atomic": "^2.0.5",
+    "shx": "^0.3.3",
+    "terser-config-atomic": "^0.1.1",
+    "typescript": "^4"
+  },
+  "engines": {
+    "atom": ">=1.52.0",
+    "electron": ">=6.x"
+  },
+  "homepage": "https://github.com/steelbrain/linter-ui-default#readme",
+  "keywords": [
+    "linter-ui",
+    "linter-ui-default"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "name": "linter-ui-default",
+  "package-deps": [
+    {
+      "name": "intentions"
+    },
+    {
+      "name": "linter",
+      "minimumVersion": "3.0.0"
+    }
+  ],
+  "providedServices": {
+    "linter-ui": {
+      "versions": {
+        "1.0.0": "provideUI"
+      }
+    },
+    "intentions:list": {
+      "versions": {
+        "1.0.0": "provideIntentions"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steelbrain/linter-ui-default.git"
+  },
+  "scripts": {
+    "benchmark": "cross-env NODE_ENV=production npm run build.unit && atom --test ./benchmark/benchmark.js",
+    "build": "cross-env NODE_ENV=production parcel build --target main ./lib/index.ts --detailed-report 50",
+    "build-commit": "npm run clean && npm run types && build-commit -o dist",
+    "build.unit": "npm run types && babel ./lib --out-dir ./dist --config-file ./babel.unit.config.json --extensions .tsx,.ts",
+    "clean": "shx rm -rf dist",
+    "dev": "cross-env NODE_ENV=development parcel watch --target main ./lib/index.ts",
+    "format": "prettier --write .",
+    "get.linter-types": "node ./scripts/get-linter-types.js",
+    "lint": "eslint . --fix",
+    "prepare": "npm run get.linter-types && npm run build",
+    "prepublishOnly": "npm run build-commit",
+    "test": "npm run build.unit && npm run build && npm run test.only",
+    "test.format": "prettier . --check",
+    "test.lint": "eslint .",
+    "test.only": "atom --test spec",
+    "types": "(tsc -p ./lib/tsconfig.json --emitDeclarationOnly || echo done) && (shx cp -r ./lib/types/ dist/types && shx rm -rf ./dist/types/linter/)"
+  },
+  "targets": {
+    "main": {
+      "context": "electron-renderer",
+      "includeNodeModules": {
+        "atom": false,
+        "electron": false,
+        "atom-package-deps": false,
+        "disposable-event": false
+      },
+      "outputFormat": "commonjs",
+      "isLibrary": true
+    }
+  },
+  "version": "3.4.1"
+}

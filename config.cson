@@ -1,0 +1,44 @@
+"*":
+  core:
+    disabledPackages: [
+      "autocomplete-html"
+      "autocomplete-plus"
+      "autocomplete-snippets"
+      "autocomplete-css"
+      "about"
+      "autosave"
+      "background-tips"
+      "bookmarks"
+      "github"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    preferredLineLength: 100
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "0f5c73bd-001f-486a-85c6-d45b0b97fcb4"
+  "linter-eslint":
+    autofix: {}
+    disabling:
+      disableWhenNoEslintConfig: false
+  "linter-ui-default":
+    showPanel: true
+  "spell-check":
+    locales: [
+      "en-US"
+    ]
+  welcome:
+    showOnStartup: false
+".css.less.source":
+  editor:
+    preferredLineLength: 80
+".css.scss.source":
+  editor:
+    preferredLineLength: 80
+".css.source":
+  editor:
+    preferredLineLength: 80
+".sass.source":
+  editor:
+    preferredLineLength: 80

@@ -1,0 +1,15 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "_from": "https://www.atom.io/api/packages/tree-view-click/versions/1.0.1/tarball",
+  "_id": "tree-view-click@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-GF0Z9STILvW9rEI+CKPLEQdCmPhSvVB5TzANJIGT2qvmXOms+PZ2S3qwtHPHzvWRLKkLxyRIJ6udwG/8sC3uYA==",
+  "_location": "/tree-view-click",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/tree-view-click/versions/1.0.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/tree-view-click/versions/1.0.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/tree-view-click/versions/1.0.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/tree-view-click/versions/1.0.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/tree-view-click/versions/1.0.1/tarball",
+  "_shasum": "264ee55c24405ca8a8ae9a1dac96e46e066dbdec",
+  "_spec": "https://www.atom.io/api/packages/tree-view-click/versions/1.0.1/tarball",
+  "_where": "/private/var/folders/pg/3ms3qmv50dzc9xcwmfkkfzmh0000gn/T/apm-install-dir-2022629-97120-8w9qzy.qgx6i",
+  "author": {
+    "name": "Jerry Yu"
+  },
+  "bugs": {
+    "url": "https://github.com/yubaoquan/tree-view-click/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Allow user to custom single/double click to open a directory/file. On directories, the arrow next to the directory responds to single clicks.",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/yubaoquan/tree-view-click#readme",
+  "issues": "https://github.com/yubaoquan/tree-view-click/issues",
+  "keywords": [
+    "tree-view",
+    "double click",
+    "click",
+    "file",
+    "folder",
+    "directory"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "tree-view-click",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yubaoquan/tree-view-click.git"
+  },
+  "version": "1.0.1"
+}

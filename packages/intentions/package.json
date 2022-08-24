@@ -1,0 +1,111 @@
+{
+  "_from": "https://www.atom.io/api/packages/intentions/versions/2.1.1/tarball",
+  "_id": "intentions@2.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-NCpeUd0FVT70jYpigXiQ4p6iJJ3JT1NDOybTDArcwyYFBtlCsicEAxNf0RGjYSxoTysHUEZFt8vTma/0LIWDBA==",
+  "_location": "/intentions",
+  "_moduleAliases": {
+    "solid-js": "./node_modules/solid-js/dist/solid.cjs",
+    "solid-js/web": "./node_modules/solid-js/web/dist/web.cjs"
+  },
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/intentions/versions/2.1.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/intentions/versions/2.1.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/intentions/versions/2.1.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/intentions/versions/2.1.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/intentions/versions/2.1.1/tarball",
+  "_shasum": "6f5dd5ecd7b5dc3af42d2ce01fa9cb5472fc2668",
+  "_spec": "https://www.atom.io/api/packages/intentions/versions/2.1.1/tarball",
+  "_where": "/private/var/folders/pg/3ms3qmv50dzc9xcwmfkkfzmh0000gn/T/apm-install-dir-2022625-19964-fys8d2.0vb06",
+  "alias": {
+    "solid-js": "solid-js/dist/solid.js",
+    "solid-js/web": "solid-js/web/dist/web.js"
+  },
+  "bugs": {
+    "url": "https://github.com/steelbrain/intentions/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "intentions:list": {
+      "versions": {
+        "^1.0.0": "consumeListIntentions"
+      }
+    },
+    "intentions:highlight": {
+      "versions": {
+        "^1.0.0": "consumeHighlightIntentions"
+      }
+    }
+  },
+  "dependencies": {
+    "disposable-event": "^2.0.0",
+    "sb-event-kit": "^3.0.0",
+    "solid-js": "^0.26.5"
+  },
+  "deprecated": false,
+  "description": "Base package for showing intentions in Atom",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@types/atom": "latest",
+    "@types/jasmine": "v1",
+    "babel-preset-atomic": "^4.1.0",
+    "babel-preset-solid": "^0.26.5",
+    "build-commit": "^0.1.4",
+    "cross-env": "^7.0.3",
+    "eslint-config-atomic": "^1.16.0",
+    "jasmine-fix": "^1.3.1",
+    "module-alias": "^2.2.2",
+    "parcel": "^2.0.0-beta.3.1",
+    "prettier-config-atomic": "^2.0.5",
+    "typescript": "^4.3.2"
+  },
+  "engines": {
+    "atom": ">=1.55 <2.0.0",
+    "electron": ">=6.x"
+  },
+  "homepage": "https://github.com/steelbrain/intentions#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "name": "intentions",
+  "prettier": "prettier-config-atomic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steelbrain/intentions.git"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production parcel build --target main ./lib/index.ts --detailed-report",
+    "build-commit": "build-commit -o dist",
+    "build.unit": "(npm run types || echo done) && babel ./lib --out-dir ./dist --config-file ./babel.unit.config.json --extensions .tsx,.ts",
+    "clean": "shx rm -rf ./dist",
+    "dev": "cross-env NODE_ENV=development parcel watch --target main ./lib/index.ts",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix",
+    "test": "npm run build.unit && npm run build && npm run test.only",
+    "test.format": "prettier --check .",
+    "test.lint": "eslint .",
+    "test.only": "atom --test spec",
+    "types": "tsc -p ./lib/tsconfig.json --noEmit"
+  },
+  "source": "./lib/index.ts",
+  "targets": {
+    "main": {
+      "context": "electron-renderer",
+      "includeNodeModules": {
+        "atom": false,
+        "electron": false,
+        "disposable-event": false
+      },
+      "outputFormat": "commonjs",
+      "isLibrary": true
+    }
+  },
+  "version": "2.1.1"
+}
