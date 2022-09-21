@@ -16,6 +16,7 @@
     preferredLineLength: 100
     softWrap: true
     softWrapAtPreferredLineLength: true
+    tabLength: 4
   "exception-reporting":
     userId: "0f5c73bd-001f-486a-85c6-d45b0b97fcb4"
   "linter-eslint":
@@ -28,6 +29,8 @@
     locales: [
       "en-US"
     ]
+  "tree-view":
+    autoReveal: true
   welcome:
     showOnStartup: false
 ".css.less.source":

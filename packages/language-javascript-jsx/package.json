@@ -1,0 +1,40 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-javascript-jsx/versions/0.3.7/tarball",
+  "_id": "language-javascript-jsx@0.3.7",
+  "_inBundle": false,
+  "_integrity": "sha512-KVY+WuAlQIpVMHQAckACLaZBvrN2SyMODT+rqpJUgzHLvlrY1LInGkbSoEfJe4D9OXsbSgW58aY7hou5LL2b9w==",
+  "_location": "/language-javascript-jsx",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-javascript-jsx/versions/0.3.7/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-javascript-jsx/versions/0.3.7/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-javascript-jsx/versions/0.3.7/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-javascript-jsx/versions/0.3.7/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-javascript-jsx/versions/0.3.7/tarball",
+  "_shasum": "3bb6f06e5178e278ce95274b5553ffae32c9a4cf",
+  "_spec": "https://www.atom.io/api/packages/language-javascript-jsx/versions/0.3.7/tarball",
+  "_where": "/private/var/folders/dz/7qk7jpgn3dz6v_wtp8jvzv800000gp/T/apm-install-dir-2022726-54677-cwu1u9.3i03e",
+  "bugs": {
+    "url": "https://github.com/subtlegradient/language-javascript-jsx/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "JavaScript, ES6, ES7, React JSX, Flow, etc… by SubtleGradient of Facebook",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/subtlegradient/language-javascript-jsx#readme",
+  "license": "MIT",
+  "name": "language-javascript-jsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subtlegradient/language-javascript-jsx.git"
+  },
+  "version": "0.3.7"
+}
